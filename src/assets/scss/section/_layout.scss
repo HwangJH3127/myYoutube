@@ -4,13 +4,24 @@
   top: 0;
   width: 260px;
   height: 100%;
+  overflow-y: auto;
   z-index: 10000;
   background-color: var(--black);
+
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--black200);
+  }
+  &::-webkit-scrollbar-track {
+    background-color: var(--black100);
+  }
 }
 #main {
   max-width: 2000px;
   min-height: 100vh;
-  margin: 0auto;
+  margin: 0 auto;
   padding-left: 260px;
   background-color: var(--black100);
 }
