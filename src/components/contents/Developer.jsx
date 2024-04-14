@@ -6,7 +6,10 @@ const Developer = () => {
   return (
     <section id="developerPage">
       <h2>🥰 추천 개발자를 소개합니다.</h2>
-      <div className="developerPage__inner">
+      <div
+        className="developerPage__inner"
+        style={{ overflow: "hidden", width: "100%", height: "200px" }}
+      >
         {developerText.map((developer, key) => (
           <div className="developer play__icon" key={key}>
             <div className="developer__img">
