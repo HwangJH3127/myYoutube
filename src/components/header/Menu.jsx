@@ -4,7 +4,6 @@ import { headerMenus, searchKeyword } from "../../data/header";
 
 const Menu = () => {
   const location = useLocation();
-  console.log(location);
   return (
     <nav className="header__menu">
       <ul className="menu">
