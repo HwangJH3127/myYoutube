@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { todayText } from "../../data/today";
 import { Link } from "react-router-dom";
 
-const Today = () => {
+const Today = ({ videos, title, id }) => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 300);
+  }, []);
+
+  const todayClass = loading ? "isLoading" : "isLoaded";
   return (
-    <section id="today">
-      <h2>🥰 오늘의 추천 영상입니다.</h2>
+    <section id={id} className={todayClass}>
+      <h2>{title}</h2>
 
       <div className="today__inner">
         <div className="today__thumb play__icon">

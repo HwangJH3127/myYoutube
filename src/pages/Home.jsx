@@ -9,12 +9,18 @@ import { websiteText } from "../data/website";
 import { gsapText } from "../data/gsap";
 import { portfolioText } from "../data/portfolio";
 import { youtubeText } from "../data/youtube";
+import { todayText } from "../data/today";
+import { developerText } from "../data/developer";
 
 const Home = () => {
   return (
     <Main>
-      <Today />
-      <Developer />
+      <Today videos={todayText} title="🥰 오늘의 추천 영상입니다." id="today" />
+      <Developer
+        videos={developerText}
+        title="😪 추천 개발자를 소개합니다."
+        id="developer"
+      />
       <VideoSlider
         videos={webdText}
         title="😄 웹디자인기능사 한번에 따자!"
