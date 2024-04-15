@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-const Developer = ({ videos, title, id }) => {
+const Developer = ({ id }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
