@@ -38,6 +38,9 @@ const Search = () => {
   return (
     <Main title="검색" description="검새 페이지입니다.">
       <section id="searchPage" className={searchPageClass}>
+        <h2>
+          <em>{searchId}</em> 검색 결과입니다.
+        </h2>
         <div className="video__inner search">
           <VideoSearch videos={videos} />
         </div>
